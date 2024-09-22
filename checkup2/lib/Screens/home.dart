@@ -36,7 +36,7 @@ class _homeState extends State<home> {
 
       ),*/
       backgroundColor: Colors.black,
-      backgroundColor: const Color(0xFFEFD2D2),
+      // backgroundColor: const Color(0xFFEFD2D2),
       body: ListView(
         children: [
           Container(

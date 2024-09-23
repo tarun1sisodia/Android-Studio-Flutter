@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class profile extends StatefulWidget {
@@ -13,8 +14,9 @@ class _profileState extends State<profile> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Profile"),
-        leading: const Icon(Icons.person_off),
+        leading: const Icon(CupertinoIcons.person),
       ),
+      backgroundColor: const Color(0xFFEFD2D2),
       body: const Center(child: Text("Kashu")),
     );
   }

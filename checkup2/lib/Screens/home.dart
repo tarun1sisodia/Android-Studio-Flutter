@@ -1,3 +1,5 @@
+import 'package:checkup2/base/widgets/app_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
 
@@ -38,6 +40,9 @@ class _homeState extends State<home> {
       backgroundColor: const Color(0xFFEFD2D2),
       body: ListView(
         children: [
+          const SizedBox(
+            height: 25,
+          ),
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 15),
 
@@ -97,8 +102,8 @@ class _homeState extends State<home> {
                         children: [
                           //Search Icon
                           const Icon(
-                            Icons.search,
-                            size: 30,
+                            CupertinoIcons.search,
+                            size: 25,
                             color: Colors.amber,
                           ),
                           // const SizedBox(width: 5),
@@ -112,10 +117,10 @@ class _homeState extends State<home> {
                   )
                 ],
               )),
-          const SizedBox(height: 20),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-            // color: Colors.blueGrey,
+          const SizedBox(height: 40),
+          AppDoubleText(
+            bigtxt: 'Upcoming Flights',
+            smalltxt: 'View all',
           ),
         ],
       ),

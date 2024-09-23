@@ -15,7 +15,7 @@ class AppStyles {
   //Text Style for 2nd.
   static TextStyle textStyle1 = TextStyle(
       fontWeight: FontWeight.w500,
-      fontSize: 22,
+      fontSize: 20,
       color: textcolor,
       fontFamily: 'Roboto');
 }

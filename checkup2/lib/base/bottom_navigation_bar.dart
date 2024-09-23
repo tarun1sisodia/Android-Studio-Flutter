@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/cupertino.dart';
 import '../Screens/home.dart';
 import '../Screens/profile.dart';
 import '../Screens/setting.dart';
@@ -53,17 +53,17 @@ class _navbarState extends State<navbar> {
           //List of nav-bar icons
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(CupertinoIcons.home),
               label: "Home",
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.menu_book_outlined), label: "Menubook"),
+                icon: Icon(CupertinoIcons.book), label: "Menubook"),
             /*BottomNavigationBarItem(
                 icon: Icon(Icons.search_off_outlined), label: "Search"),*/
             BottomNavigationBarItem(
-                icon: Icon(Icons.person_2_rounded), label: "Profile"),
+                icon: Icon(CupertinoIcons.person), label: "Profile"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings), label: "Settings"),
+                icon: Icon(CupertinoIcons.settings), label: "Settings"),
           ]),
     );
   }

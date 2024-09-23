@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class menubook extends StatefulWidget {
@@ -13,8 +14,9 @@ class _menubookState extends State<menubook> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("MenuBook"),
-        leading: const Icon(Icons.menu_book_sharp),
+        leading: const Icon(CupertinoIcons.book),
       ),
+      backgroundColor: const Color(0xFFEFD2D2),
       body: const Center(child: Text("Taru")),
     );
   }

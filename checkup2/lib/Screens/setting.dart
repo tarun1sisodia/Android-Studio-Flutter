@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class setting extends StatefulWidget {
@@ -13,8 +14,9 @@ class _settingState extends State<setting> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Settings"),
-        leading: const Icon(Icons.settings),
+        leading: const Icon(CupertinoIcons.settings),
       ),
+      backgroundColor: const Color(0xFFEFD2D2),
       body: const Center(child: Text("So")),
     );
   }

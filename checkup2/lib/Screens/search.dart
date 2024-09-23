@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class search extends StatefulWidget {
@@ -13,8 +14,9 @@ class _searchState extends State<search> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Search"),
-        leading: const Icon(Icons.search_off_rounded),
+        leading: Icon(CupertinoIcons.search),
       ),
+      backgroundColor: const Color(0xFFEFD2D2),
       body: const Center(child: Text("what")),
     );
   }

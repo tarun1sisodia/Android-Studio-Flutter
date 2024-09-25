@@ -33,6 +33,6 @@ class AppStyles {
     fontWeight: FontWeight.w500,
     fontSize: 18,
     color: Colors.white,
-    // fontFamily: 'Roboto'
+    // fontFamily: 'Times new roman'
   );
 }

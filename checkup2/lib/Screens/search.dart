@@ -14,7 +14,7 @@ class _searchState extends State<search> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Search"),
-        leading: Icon(CupertinoIcons.search),
+        leading: const Icon(CupertinoIcons.search),
       ),
       backgroundColor: const Color(0xFFEFD2D2),
       body: const Center(child: Text("what")),

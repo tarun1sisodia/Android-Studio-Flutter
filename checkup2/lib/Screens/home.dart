@@ -68,20 +68,20 @@ class _homeState extends State<home> {
                         ],
                       ),
                       Container(
-                          //Design for Search Box
+                          //Design for Logo
                           padding: const EdgeInsets.symmetric(
                               vertical: 5, horizontal: 5),
-                          height: 50,
-                          width: 50,
+                          height: 40,
+                          width: 40,
 
                           //Applying Logo && Decoration for Image.
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(28),
-                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.white,
                               image: const DecorationImage(
                                   image: AssetImage(
                                 //Calling Another File for image.
-                                Media.logo,
+                                Media.ticketlogo,
                               ))))
                     ],
                   ),
@@ -91,43 +91,46 @@ class _homeState extends State<home> {
                     height: 10,
                   ),
 
+                  //Search Box Container
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 10),
+                    margin: EdgeInsets.only(right: 5, left: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         //Color for searchbox
                         color: const Color(0xff687daf)),
-                    child: Row(
+                    child: const Row(
 
                         //Search Box
                         children: [
                           //Search Icon
-                          const Icon(
+                          Icon(
                             CupertinoIcons.search,
                             size: 25,
                             color: Colors.amber,
                           ),
                           // const SizedBox(width: 5),
-                          const Text("Search",
+                          Text("Search",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16)),
-                          Container(
+                          //Line 116 Check can we remove it.
+                          /*Container(
                             color: Colors.amber,
-                          )
+                          )*/
                         ]),
                   )
                 ],
               )),
           const SizedBox(height: 35),
 
-          //Message For Users.
+          //Message For Users calling App_widget.dart
           const AppDoubleText(
             bigtxt: 'Upcoming Ticket',
             smalltxt: 'View all',
           ),
 
-          //Ticket Views
+          //Ticket Views ticket_view.dart
           TicketView(),
         ],
       ),

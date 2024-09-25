@@ -1,4 +1,5 @@
 import 'package:checkup2/base/widgets/app_widget.dart';
+import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
@@ -44,7 +45,7 @@ class _homeState extends State<home> {
             height: 25,
           ),
           Container(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
 
               //Colors for 1st Container
               // color: Colors.amber,
@@ -61,7 +62,7 @@ class _homeState extends State<home> {
                             height: 5,
                           ),
                           Text(
-                            "Buy Products",
+                            "Book Tickets",
                             style: AppStyles.textStyle1,
                           )
                         ],
@@ -98,6 +99,7 @@ class _homeState extends State<home> {
                         //Color for searchbox
                         color: const Color(0xff687daf)),
                     child: Row(
+
                         //Search Box
                         children: [
                           //Search Icon
@@ -117,11 +119,16 @@ class _homeState extends State<home> {
                   )
                 ],
               )),
-          const SizedBox(height: 40),
-          AppDoubleText(
-            bigtxt: 'Upcoming Flights',
+          const SizedBox(height: 35),
+
+          //Message For Users.
+          const AppDoubleText(
+            bigtxt: 'Upcoming Ticket',
             smalltxt: 'View all',
           ),
+
+          //Ticket Views
+          TicketView(),
         ],
       ),
     );

@@ -7,9 +7,9 @@ class BigDot extends StatelessWidget {
   Widget build(BuildContext context) {
     //Creating Dots for Ticket.
     return Container(
-        padding: EdgeInsets.all(3),
+        padding: const EdgeInsets.all(3),
         decoration: BoxDecoration(
-          color: Colors.cyan,
+          color: const Color(0xff0ca4a5),
           border: Border.all(width: 3, color: Colors.white),
           borderRadius: BorderRadius.circular(10),
         ));

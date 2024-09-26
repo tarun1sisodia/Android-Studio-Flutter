@@ -4,9 +4,13 @@ Color primary = const Color(0xff4768b6);
 
 class AppStyles {
   static Color primarycolor = primary;
+  static Color backcolor = const Color(0xfff1dedc);
   static Color textcolor = const Color(0xff3b3b3b);
-  static Color textblue = const Color(0xff4396a9);
-
+  static Color orange = const Color(0xfff37032);
+  static Color bluetype = const Color(0xFF4768B6);
+  static Color cyan = const Color(0xff0ca4a5);
+  static Color amber = Colors.amber;
+  static Color purpleaccent = Colors.deepPurpleAccent;
   //Text Style for normal
   static TextStyle textStyle = TextStyle(
       fontWeight: FontWeight.w400,
@@ -29,10 +33,9 @@ class AppStyles {
     color: primarycolor,
     // fontFamily: 'Roboto'
   );
-  static TextStyle textStyle3 = TextStyle(
+  static TextStyle ticketstyle = TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 18,
+    fontSize: 14,
     color: Colors.white,
-    // fontFamily: 'Times new roman'
   );
 }

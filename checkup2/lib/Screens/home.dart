@@ -38,100 +38,122 @@ class _homeState extends State<home> {
         ],
         backgroundColor: Colors.black,
       ),*/
-      backgroundColor: const Color(0xFFEFD2D2),
+      // backgroundColor: const Color(0xFFEFD2D2),
+      backgroundColor: AppStyles.backcolor,
       body: ListView(
         children: [
+          //Distance B/w Top & Head.
           const SizedBox(
             height: 25,
           ),
           Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+            //Padding For Whole.
+            padding: const EdgeInsets.symmetric(horizontal: 10),
 
-              //Colors for 1st Container
-              // color: Colors.amber,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Hello Folks", style: AppStyles.textStyle),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            "Book Tickets",
-                            style: AppStyles.textStyle1,
-                          )
-                        ],
-                      ),
-                      Container(
-                          //Design for Logo
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 5, horizontal: 5),
-                          height: 40,
-                          width: 40,
+            //Colors for 1st Container
+            // color: Colors.amber,
+            child: Column(
+              children: [
+                Row(
+                  //Space B/w hellofolks , book Tickets & logo
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                            child: Text("Hello Folks",
+                                style: AppStyles.textStyle)),
+                        //Space After Search Bar & book Tickets
+                        Container(
+                          height: 5,
+                        ),
+                        Text(
+                          "Book Tickets",
+                          style: AppStyles.textStyle1,
+                        )
+                      ],
+                    ),
+                    Container(
+                        //Design for Logo
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 5, horizontal: 5),
+                        height: 40,
+                        width: 40,
 
-                          //Applying Logo && Decoration for Image.
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.white,
-                              image: const DecorationImage(
-                                  image: AssetImage(
-                                //Calling Another File for image.
-                                Media.ticketlogo,
-                              ))))
-                    ],
-                  ),
+                        //Applying Logo && Decoration for Image.
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: const Color(0xFFEFD2D2),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                              //Calling Another File for image.
+                              Media.ticketlogo,
+                            ))))
+                  ],
+                ),
 
-                  //Space b/w Search box && Book tickets.
-                  const SizedBox(
-                    height: 10,
-                  ),
+                //Space b/w Search box && Book tickets.
+                Container(
+                  height: 20,
+                ),
 
-                  //Search Box Container
-                  Container(
-                    margin: EdgeInsets.only(right: 5, left: 5),
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        //Color for searchbox
-                        color: const Color(0xff687daf)),
-                    child: const Row(
+                //Search Box Container
+                Container(
+                  margin: const EdgeInsets.only(right: 5, left: 5),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      //Color for searchbox
+                      color: const Color(0xff687daf)),
+                  child: const Row(
 
-                        //Search Box
-                        children: [
-                          //Search Icon
-                          Icon(
-                            CupertinoIcons.search,
-                            size: 25,
-                            color: Colors.amber,
-                          ),
-                          // const SizedBox(width: 5),
-                          Text("Search",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 16)),
-                          //Line 116 Check can we remove it.
-                          /*Container(
+                      //Search Box
+                      children: [
+                        //Search Icon
+                        Icon(
+                          CupertinoIcons.search,
+                          size: 25,
+                          color: Colors.amber,
+                        ),
+                        // const SizedBox(width: 5),
+                        Text("Search",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 16)),
+                        //Line 116 Check can we remove it.
+                        /*Container(
                             color: Colors.amber,
                           )*/
-                        ]),
-                  )
-                ],
-              )),
-          const SizedBox(height: 35),
+                      ]),
+                ),
+                Container(height: 30),
 
-          //Message For Users calling App_widget.dart
-          const AppDoubleText(
-            bigtxt: 'Upcoming Ticket',
-            smalltxt: 'View all',
+                //Message For Users calling App_widget.dart
+                const AppDoubleText(
+                  bigtxt: 'Upcoming Ticket',
+                  smalltxt: 'View all',
+                ),
+
+                Container(
+                  height: 10,
+                ),
+
+                //Ticket Views ticket_view.dart multiple tickets
+                const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      TicketView(),
+                      TicketView(),
+                      TicketView(),
+                      TicketView(),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-
-          //Ticket Views ticket_view.dart
-          TicketView(),
         ],
       ),
     );

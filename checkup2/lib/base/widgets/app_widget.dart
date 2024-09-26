@@ -7,6 +7,11 @@ class AppDoubleText extends StatelessWidget {
   //String for Text on display.
   final String bigtxt;
   final String smalltxt;
+
+  void hello() {
+    print("Working All");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +27,7 @@ class AppDoubleText extends StatelessWidget {
           ),
           //What is InkWell--> A Widget which calls Function onTap.
           InkWell(
-            onTap: () {},
+            onTap: hello,
             //For function.
             child: Text(
               smalltxt,

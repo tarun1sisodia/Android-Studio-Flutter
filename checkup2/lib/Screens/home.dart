@@ -75,21 +75,24 @@ class _homeState extends State<home> {
                       ],
                     ),
                     Container(
-                        //Design for Logo
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 5, horizontal: 5),
-                        height: 40,
-                        width: 40,
+                      //Design for Logo
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 5, horizontal: 5),
+                      height: 40,
+                      width: 40,
 
-                        //Applying Logo && Decoration for Image.
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: const Color(0xFFEFD2D2),
-                            image: const DecorationImage(
-                                image: AssetImage(
-                              //Calling Another File for image.
-                              Media.ticketlogo,
-                            ))))
+                      //Applying Logo && Decoration for Image.
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFFEFD2D2),
+                        image: const DecorationImage(
+                          image: AssetImage(
+                            //Calling Another File for image.
+                            Media.ticketlogo,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
 
@@ -104,28 +107,28 @@ class _homeState extends State<home> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      //Color for searchbox
-                      color: const Color(0xff687daf)),
+                    borderRadius: BorderRadius.circular(10),
+                    //Color for searchbox
+                    color: const Color(0xff687daf),
+                  ),
                   child: const Row(
-
-                      //Search Box
-                      children: [
-                        //Search Icon
-                        Icon(
-                          CupertinoIcons.search,
-                          size: 25,
-                          color: Colors.amber,
-                        ),
-                        // const SizedBox(width: 5),
-                        Text("Search",
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 16)),
-                        //Line 116 Check can we remove it.
-                        /*Container(
+                    //Search Box
+                    children: [
+                      //Search Icon
+                      Icon(
+                        CupertinoIcons.search,
+                        size: 25,
+                        color: Colors.amber,
+                      ),
+                      // const SizedBox(width: 5),
+                      Text("Search",
+                          style: TextStyle(color: Colors.white, fontSize: 16)),
+                      //Line 116 Check can we remove it.
+                      /*Container(
                             color: Colors.amber,
                           )*/
-                      ]),
+                    ],
+                  ),
                 ),
                 Container(height: 30),
 

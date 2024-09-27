@@ -169,65 +169,23 @@ class TicketView extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      //Travel Date with Month
                       AppColumnTextLayout(
                           topText: "2 Feb",
                           bottomText: "Date",
                           alignment: CrossAxisAlignment.start),
+                      //Time of Flight
                       AppColumnTextLayout(
                           topText: "10:00 AM",
                           bottomText: "Departure Time",
                           alignment: CrossAxisAlignment.center),
+                      //Platform number
                       AppColumnTextLayout(
                           topText: "3",
                           bottomText: "PL",
                           alignment: CrossAxisAlignment.end)
-
-                      //Creating Space Between Text and Big Dots.
-                      /*Expanded(child: Container()),
-                      const SizedBox(
-                        width: 120,
-                        //Textstyle is a Widget file for custom design
-                        child: Textstyle1(text: "07:00 AM"),
-                      ),
-                      //It will expand size between text.
-                      //Creating Space Between Text and Big Dots.
-                      Expanded(child: Container()),
-                      const SizedBox(
-                        //Textstyle is a Widget file for custom design
-                        child: Textstyle(text: "24"),
-                      ),*/
                     ],
                   ),
-                  /*   SizedBox(
-                    height: 1,
-                  ),
-*/
-                  //Show Departure and Destination with Date & Time
-                  /* Row(
-                    children: [
-                      //Textstyle is a Widget file for custom design
-
-                      const Textstyle1(
-                        text: "Date",
-                        align: TextAlign.right,
-                      ),
-                      //Creating Space Between Text and Big Dots.
-                      Expanded(child: Container()),
-                      const Textstyle1(
-                        text: "Departure Time",
-                        align: TextAlign.center,
-                      ),
-                      Expanded(child: Container()),
-                      //Sized Box For Platform Number
-                      const SizedBox(
-                        width: 23,
-                        child: Textstyle1(
-                          text: "PN",
-                          align: TextAlign.end,
-                        ),
-                      ),
-                    ],
-                  ),*/
                 ],
               ),
             ),

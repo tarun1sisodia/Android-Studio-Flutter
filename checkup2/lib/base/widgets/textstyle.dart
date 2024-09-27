@@ -16,7 +16,7 @@ class Textstyle extends StatelessWidget {
       text,
       textAlign: align,
       //calling App_styles for text style
-      style: AppStyles.textStyle2.copyWith(color: Colors.white),
+      style: AppStyles.ticketstyle2,
     );
   }
 }

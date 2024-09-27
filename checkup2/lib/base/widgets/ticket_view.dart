@@ -1,3 +1,4 @@
+import 'package:checkup2/base/widgets/app_column_text_layout.dart';
 import 'package:checkup2/base/widgets/app_lay_build.dart';
 import 'package:checkup2/base/widgets/big_circle.dart';
 import 'package:checkup2/base/widgets/big_dot.dart';
@@ -82,7 +83,10 @@ class TicketView extends StatelessWidget {
                       const BigDot(),
                       //Creating Space Between Text and Big Dots.
                       Expanded(child: Container()),
-                      const Textstyle(text: "DL"),
+                      const Textstyle(
+                        text: "DL",
+                        align: TextAlign.end,
+                      ),
                     ],
                   ),
                   const SizedBox(
@@ -91,26 +95,34 @@ class TicketView extends StatelessWidget {
                   //Show Departure and Destination with Date & Time
                   Row(
                     children: [
+                      //Perfect Source Station Name
                       const SizedBox(
-                          width: 100,
-                          child: Textstyle1(
-                            text: "Agra Cantt",
-                            align: TextAlign.start,
-                          )),
+                        width: 100,
+                        child: Textstyle1(
+                          text: "Agra Cantt",
+                          align: TextAlign.start,
+                        ),
+                      ),
                       //Creating Space Between Text and Big Dots.
+
                       Expanded(child: Container()),
+                      //Travel Time
                       const SizedBox(
-                          width: 105,
-                          child: Textstyle1(
-                            text: "4H 18H",
-                          )),
+                        width: 105,
+                        child: Textstyle1(
+                          text: "4H 18H",
+                        ),
+                      ),
+
                       Expanded(child: Container()),
+                      //Short name of destination.
                       const SizedBox(
-                          width: 40,
-                          child: Textstyle1(
-                            text: "Delhi",
-                            align: TextAlign.end,
-                          )),
+                        width: 40,
+                        child: Textstyle1(
+                          text: "Delhi",
+                          align: TextAlign.end,
+                        ),
+                      ),
                     ],
                   ),
                 ],
@@ -137,10 +149,11 @@ class TicketView extends StatelessWidget {
                 ],
               ),
             ),
+
             //Orange Part of Ticket
             Container(
               margin: const EdgeInsets.only(right: 22, left: 22),
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.all(10),
               // color: Colors.yellow,
               decoration: BoxDecoration(
                 color: AppStyles.orange,
@@ -150,20 +163,27 @@ class TicketView extends StatelessWidget {
                   bottomRight: Radius.circular(20),
                 ),
               ),
-              child: Column(
+              child: const Column(
                 children: [
                   //Show Departure and destination with icons first line
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const SizedBox(
-                          //Textstyle is a Widget file for custom design
-                          width: 80,
-                          child: Textstyle(
-                            text: "26 Sep",
-                            align: TextAlign.start,
-                          )),
+                      AppColumnTextLayout(
+                          topText: "2 Feb",
+                          bottomText: "Date",
+                          alignment: CrossAxisAlignment.start),
+                      AppColumnTextLayout(
+                          topText: "10:00 AM",
+                          bottomText: "Departure Time",
+                          alignment: CrossAxisAlignment.center),
+                      AppColumnTextLayout(
+                          topText: "3",
+                          bottomText: "PL",
+                          alignment: CrossAxisAlignment.end)
+
                       //Creating Space Between Text and Big Dots.
-                      Expanded(child: Container()),
+                      /*Expanded(child: Container()),
                       const SizedBox(
                         width: 120,
                         //Textstyle is a Widget file for custom design
@@ -175,15 +195,15 @@ class TicketView extends StatelessWidget {
                       const SizedBox(
                         //Textstyle is a Widget file for custom design
                         child: Textstyle(text: "24"),
-                      ),
+                      ),*/
                     ],
                   ),
-                  const SizedBox(
+                  /*   SizedBox(
                     height: 1,
                   ),
-
+*/
                   //Show Departure and Destination with Date & Time
-                  Row(
+                  /* Row(
                     children: [
                       //Textstyle is a Widget file for custom design
 
@@ -200,13 +220,14 @@ class TicketView extends StatelessWidget {
                       Expanded(child: Container()),
                       //Sized Box For Platform Number
                       const SizedBox(
-                          width: 23,
-                          child: Textstyle1(
-                            text: "PN",
-                            align: TextAlign.end,
-                          )),
+                        width: 23,
+                        child: Textstyle1(
+                          text: "PN",
+                          align: TextAlign.end,
+                        ),
+                      ),
                     ],
-                  ),
+                  ),*/
                 ],
               ),
             ),

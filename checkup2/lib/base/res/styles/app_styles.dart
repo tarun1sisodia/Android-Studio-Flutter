@@ -33,9 +33,16 @@ class AppStyles {
     color: primarycolor,
     // fontFamily: 'Roboto'
   );
+
   static TextStyle ticketstyle = TextStyle(
     fontWeight: FontWeight.w500,
     fontSize: 14,
     color: Colors.white,
+  );
+  static TextStyle ticketstyle2 = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 17,
+    color: Colors.white,
+    // fontFamily: 'Roboto'
   );
 }

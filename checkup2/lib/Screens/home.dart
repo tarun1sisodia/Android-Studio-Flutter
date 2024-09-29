@@ -1,3 +1,4 @@
+import 'package:checkup2/Screens/Widgets/hotel.dart';
 import 'package:checkup2/base/widgets/app_widget.dart';
 import 'package:checkup2/base/widgets/app_widget_hotels.dart';
 import 'package:checkup2/base/widgets/ticket_view.dart';
@@ -157,6 +158,7 @@ class _homeState extends State<home> {
                   bigtxt: "Hotels",
                   smalltxt: "View all",
                 ),
+                const Hotel(),
               ],
             ),
           ),

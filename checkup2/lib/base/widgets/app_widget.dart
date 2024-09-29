@@ -3,8 +3,11 @@ import 'package:checkup2/base/res/styles/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class AppDoubleText extends StatelessWidget {
-  const AppDoubleText(
-      {super.key, required this.bigtxt, required this.smalltxt});
+  const AppDoubleText({
+    super.key,
+    required this.bigtxt,
+    required this.smalltxt,
+  });
   //String for Text on display.
   final String bigtxt;
   final String smalltxt;
@@ -30,8 +33,9 @@ class AppDoubleText extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    //AllTickets is a dart file.
-                    builder: (BuildContext context) => const AllTickets()),
+                  //AllTickets is a dart file.
+                  builder: (BuildContext context) => const AllTickets(),
+                ),
               );
             },
             //For function.
@@ -40,7 +44,7 @@ class AppDoubleText extends StatelessWidget {
               //copywith is used to copy all from one and alter/ Addcurrentone design.
               style: AppStyles.textStyle2.copyWith(color: Colors.blueAccent),
             ),
-          )
+          ),
         ],
       ),
     );

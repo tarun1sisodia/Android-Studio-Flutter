@@ -34,12 +34,12 @@ class AppStyles {
     // fontFamily: 'Roboto'
   );
 
-  static TextStyle ticketstyle = TextStyle(
+  static TextStyle ticketstyle = const TextStyle(
     fontWeight: FontWeight.w500,
     fontSize: 14,
     color: Colors.white,
   );
-  static TextStyle ticketstyle2 = TextStyle(
+  static TextStyle ticketstyle2 = const TextStyle(
     fontWeight: FontWeight.w500,
     fontSize: 17,
     color: Colors.white,

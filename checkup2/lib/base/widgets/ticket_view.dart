@@ -10,7 +10,8 @@ import 'package:flutter/material.dart';
 import '../res/styles/app_styles.dart';
 
 class TicketView extends StatelessWidget {
-  const TicketView({super.key});
+  final bool wholeScreen;
+  const TicketView({super.key, this.wholeScreen = false});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class TicketView extends StatelessWidget {
       height: 183,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-        // margin: const EdgeInsets.only(right: 16),
+        margin: EdgeInsets.only(right: wholeScreen == true ? 0 : 10),
         //WHole ticket background color.
         // color: Colors.pinkAccent,
         child: Column(

@@ -1,8 +1,6 @@
-import 'package:checkup2/Screens/all_tickets.dart';
+import 'package:checkup2/Screens/Widgets/hotel.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
 import 'package:flutter/material.dart';
-
-import '../../Screens/all_hotels.dart';
 
 class AppDoubleTextHotels extends StatelessWidget {
   const AppDoubleTextHotels({
@@ -36,7 +34,7 @@ class AppDoubleTextHotels extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   //AllTickets is a dart file.
-                  builder: (BuildContext context) => const AllHotels(),
+                  builder: (BuildContext context) => const Hotel(),
                 ),
               );
             },

@@ -5,7 +5,6 @@ import 'package:checkup2/base/widgets/big_dot.dart';
 import 'package:checkup2/base/widgets/textstyle.dart';
 import 'package:checkup2/base/widgets/textstyle1.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 import '../res/styles/app_styles.dart';
 
@@ -21,7 +20,7 @@ class TicketView extends StatelessWidget {
     print("Ticket View Size of height ${size.height.floor()}");
     print("Ticket View Size of Width ${size.width.floor()}");
 
-    return Container(
+    return SizedBox(
       width: size.width * 0.90,
       height: 183,
       child: Container(

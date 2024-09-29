@@ -1,4 +1,5 @@
 import 'package:checkup2/base/widgets/app_widget.dart';
+import 'package:checkup2/base/widgets/app_widget_hotels.dart';
 import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -61,9 +62,7 @@ class _homeState extends State<home> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                            child: Text("Hello Folks",
-                                style: AppStyles.textStyle)),
+                        Text("Hello Folks", style: AppStyles.textStyle),
                         //Space After Search Bar & book Tickets
                         Container(
                           height: 5,
@@ -153,6 +152,10 @@ class _homeState extends State<home> {
                       TicketView(),
                     ],
                   ),
+                ),
+                const AppDoubleTextHotels(
+                  bigtxt: "Hotels",
+                  smalltxt: "View all",
                 ),
               ],
             ),

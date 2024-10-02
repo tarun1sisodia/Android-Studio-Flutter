@@ -45,4 +45,14 @@ class AppStyles {
     color: Colors.white,
     // fontFamily: 'Roboto'
   );
+  static TextStyle hotelstyle = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 21,
+    color: backcolor,
+  );
+  static TextStyle hotelstyle1 = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 18,
+    color: backcolor,
+  );
 }

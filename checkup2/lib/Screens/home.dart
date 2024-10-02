@@ -55,6 +55,7 @@ class _homeState extends State<home> {
             //Colors for 1st Container
             // color: Colors.amber,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   //Space B/w hellofolks , book Tickets & logo
@@ -65,7 +66,7 @@ class _homeState extends State<home> {
                       children: [
                         Text("Hello Folks", style: AppStyles.textStyle),
                         //Space After Search Bar & book Tickets
-                        Container(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
@@ -97,7 +98,7 @@ class _homeState extends State<home> {
                 ),
 
                 //Space b/w Search box && Book tickets.
-                Container(
+                const SizedBox(
                   height: 20,
                 ),
 
@@ -130,7 +131,7 @@ class _homeState extends State<home> {
                     ],
                   ),
                 ),
-                Container(height: 30),
+                SizedBox(height: 30),
 
                 //Message For Users calling App_widget.dart
                 const AppDoubleText(
@@ -138,7 +139,7 @@ class _homeState extends State<home> {
                   smalltxt: 'View all',
                 ),
 
-                Container(
+                const SizedBox(
                   height: 10,
                 ),
 
@@ -158,7 +159,37 @@ class _homeState extends State<home> {
                   bigtxt: "Hotels",
                   smalltxt: "View all",
                 ),
-                const Hotel(),
+                const SizedBox(
+                  height: 20,
+                ),
+                const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Hotel(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Hotel(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Hotel(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Hotel(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Hotel(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Hotel(),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

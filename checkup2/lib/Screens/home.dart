@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
 
 import '../base/res/media.dart';
+import '../base/utils/hotels_json.dart';
 
 class home extends StatefulWidget {
   const home({super.key});
@@ -166,25 +167,20 @@ class _homeState extends State<home> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      Hotel(),
                       SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       Hotel(),
                       SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       Hotel(),
                       SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       Hotel(),
                       SizedBox(
-                        width: 20,
-                      ),
-                      Hotel(),
-                      SizedBox(
-                        width: 20,
+                        width: 15,
                       ),
                       Hotel(),
                     ],

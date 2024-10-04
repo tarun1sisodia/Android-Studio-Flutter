@@ -41,7 +41,8 @@ class AppDoubleText extends StatelessWidget {
             //For function.
             child: Text(
               smalltxt,
-              //copywith is used to copy all from one and alter/ Addcurrentone design.
+              //copywith is used to copy all from one and alter/ Add
+              // current one design.
               style: AppStyles.textStyle2.copyWith(color: Colors.blueAccent),
             ),
           ),

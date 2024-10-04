@@ -63,12 +63,11 @@ class Hotel extends StatelessWidget {
                 height: 5,
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 90),
-                child: Text(
-                  "10,000/night",
-                  style: AppStyles.hotelstyle,
-                ),
-              ),
+                  padding: const EdgeInsets.only(right: 90),
+                  child: Text(
+                    "10,000/night",
+                    style: AppStyles.hotelstyle,
+                  )),
             ],
           )
         ],

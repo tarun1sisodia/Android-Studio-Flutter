@@ -1,3 +1,4 @@
+import 'package:checkup2/Screens/search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import '../Screens/home.dart';
@@ -16,7 +17,7 @@ class _navbarState extends State<navbar> {
   //List of Available Screens
   final appScreens = [
     const home(),
-    const menubook(),
+    const search(),
     // const search(),
     const profile(),
     const setting()
@@ -57,7 +58,7 @@ class _navbarState extends State<navbar> {
               label: "Home",
             ),
             BottomNavigationBarItem(
-                icon: Icon(CupertinoIcons.book), label: "Menubook"),
+                icon: Icon(CupertinoIcons.search), label: "Search"),
             /*BottomNavigationBarItem(
                 icon: Icon(Icons.search_off_outlined), label: "Search"),*/
             BottomNavigationBarItem(

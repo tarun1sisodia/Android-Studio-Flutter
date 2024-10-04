@@ -2,10 +2,10 @@ class Media {
   static const baseimage = "assets/images";
   static const logo = "$baseimage/google.png";
   static const ticketlogo = "$baseimage/ticket.png";
-  static const hotel1 = "$baseimage/hotel1.jpg";
+  static const hotel1 = "$baseimage/hotel4.jpg";
   static const hotel2 = "$baseimage/hotel2.jpg";
   static const hotel3 = "$baseimage/hotel3.jpg";
-  static const hotel4 = "$baseimage/hotel4.jpg";
+  static const hotel4 = "$baseimage/hotel1.jpg";
   static const hotelbed1 = "$baseimage/hotel_bed1.jpg";
   static const hotelbed2 = "$baseimage/hotel_bed2.jpg";
   static const hotel_stairs = "$baseimage/hotel_stairs4.jpg";

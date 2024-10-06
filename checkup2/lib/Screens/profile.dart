@@ -9,6 +9,10 @@ class profile extends StatefulWidget {
 }
 
 class _profileState extends State<profile> {
+  void page() {
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +21,6 @@ class _profileState extends State<profile> {
         leading: const Icon(CupertinoIcons.person),
       ),
       backgroundColor: const Color(0xFFEFD2D2),
-      body: const Center(child: Text("Kashu")),
     );
   }
 }

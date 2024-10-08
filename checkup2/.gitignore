@@ -43,8 +43,8 @@ migrate_working_dir/
 /build/mapping
 /build/sdk_dependencies
 /build/apk-debug.apk
-/build/app-debug.apk.sha1
-/build/app-release.apk.sha1
+/build/app-debug.apk
+/build/app-release.apk
 
 # Symbolication related
 app.*.symbols

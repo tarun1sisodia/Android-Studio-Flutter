@@ -1,5 +1,6 @@
+import 'package:checkup2/Screens/Widgets/app_ticket_tabs.dart';
+import 'package:checkup2/Screens/Widgets/app_tickets_icons.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class search extends StatefulWidget {
@@ -15,13 +16,24 @@ class _searchState extends State<search> {
     return Scaffold(
       backgroundColor: const Color(0xFFEFD2D2),
       body: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 22),
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           Text(
-            "What are\n You looking for?",
+            "What are\nYou looking for?",
             style: AppStyles.textStyle2
-                .copyWith(color: Colors.purple, fontSize: 30),
-          )
+                .copyWith(color: Colors.black, fontSize: 30),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const AppTicketTabs(),
+          const SizedBox(
+            height: 25,
+          ),
+          const AppTicketsIcons()
         ],
       ),
     );

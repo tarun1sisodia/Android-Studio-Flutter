@@ -8,6 +8,7 @@ class AllHotels extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyles.backcolor,
       appBar: AppBar(
         title: Text("Top Hotels", style: AppStyles.textStyle1),
         centerTitle: true,

@@ -1,6 +1,6 @@
 import 'package:checkup2/Screens/Widgets/hotel.dart';
+import 'package:checkup2/Screens/all_tickets.dart';
 import 'package:checkup2/base/widgets/app_widget.dart';
-import 'package:checkup2/base/widgets/app_widget_hotels.dart';
 import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -131,12 +131,19 @@ class _homeState extends State<home> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
 
                 //Message For Users calling App_widget.dart
-                const AppDoubleText(
+                AppDoubleText(
                   bigtxt: 'Upcoming Ticket',
                   smalltxt: 'View all',
+                  func: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      //AllTickets is a dart file.
+                      builder: (BuildContext context) => const AllTickets(),
+                    ),
+                  ),
                 ),
 
                 const SizedBox(
@@ -155,9 +162,16 @@ class _homeState extends State<home> {
                     ],
                   ),
                 ),
-                const AppDoubleTextHotels(
+                AppDoubleText(
                   bigtxt: "Hotels",
                   smalltxt: "View all",
+                  func: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      //AllTickets is a dart file.
+                      builder: (BuildContext context) => const Hotel(),
+                    ),
+                  ),
                 ),
                 const SizedBox(
                   height: 20,

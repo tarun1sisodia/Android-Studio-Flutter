@@ -1,16 +1,16 @@
-import 'package:checkup2/Screens/all_tickets.dart';
 import 'package:checkup2/base/res/styles/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class AppDoubleText extends StatelessWidget {
-  const AppDoubleText({
-    super.key,
-    required this.bigtxt,
-    required this.smalltxt,
-  });
+  const AppDoubleText(
+      {super.key,
+      required this.bigtxt,
+      required this.smalltxt,
+      required this.func});
   //String for Text on display.
   final String bigtxt;
   final String smalltxt;
+  final VoidCallback func;
 
   @override
   Widget build(BuildContext context) {
@@ -28,16 +28,7 @@ class AppDoubleText extends StatelessWidget {
           //What is InkWell--> A Widget which calls Function onTap.
           InkWell(
             //On Tapping the View All
-            onTap: () {
-              //it will open a new screen from right to left.
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  //AllTickets is a dart file.
-                  builder: (BuildContext context) => const AllTickets(),
-                ),
-              );
-            },
+            onTap: () => func,
             //For function.
             child: Text(
               smalltxt,

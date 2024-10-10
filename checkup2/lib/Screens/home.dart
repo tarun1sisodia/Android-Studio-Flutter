@@ -1,5 +1,6 @@
+import 'package:checkup2/Screens/Widgets/all_hotels.dart';
 import 'package:checkup2/Screens/Widgets/hotel.dart';
-import 'package:checkup2/Screens/all_tickets.dart';
+import 'package:checkup2/Screens/Widgets/all_tickets.dart';
 import 'package:checkup2/base/widgets/app_widget.dart';
 import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/cupertino.dart';
@@ -169,7 +170,7 @@ class _homeState extends State<home> {
                     context,
                     MaterialPageRoute(
                       //AllTickets is a dart file.
-                      builder: (BuildContext context) => const Hotel(),
+                      builder: (BuildContext context) => const AllHotels(),
                     ),
                   ),
                 ),

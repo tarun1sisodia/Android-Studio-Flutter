@@ -28,7 +28,7 @@ class AppDoubleText extends StatelessWidget {
           //What is InkWell--> A Widget which calls Function onTap.
           InkWell(
             //On Tapping the View All
-            onTap: () => func,
+            onTap: func,
             //For function.
             child: Text(
               smalltxt,

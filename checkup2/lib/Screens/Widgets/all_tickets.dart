@@ -1,6 +1,5 @@
+import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/material.dart';
-
-import '../base/widgets/ticket_view.dart';
 
 class AllTickets extends StatelessWidget {
   const AllTickets({super.key});

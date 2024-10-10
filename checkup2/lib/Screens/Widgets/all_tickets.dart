@@ -1,3 +1,4 @@
+import 'package:checkup2/base/res/styles/app_styles.dart';
 import 'package:checkup2/base/widgets/ticket_view.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,7 @@ class AllTickets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyles.backcolor,
       appBar: AppBar(
         title: const Text(
           "All Tickets",

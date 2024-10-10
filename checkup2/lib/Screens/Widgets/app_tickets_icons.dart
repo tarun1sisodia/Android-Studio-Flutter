@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import '../../base/res/styles/app_styles.dart';
 
 class AppTicketsIcons extends StatelessWidget {
-  const AppTicketsIcons({super.key});
+  final IconData icon;
+  final String txt;
+  const AppTicketsIcons({super.key, required this.icon, required this.txt});
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +18,9 @@ class AppTicketsIcons extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Icon(CupertinoIcons.airplane, color: Color(0xFF9496C3)),
-              SizedBox(width: 10),
-              Text("Departure", style: AppStyles.textStyle)
-            ],
-          ),
-          Row(
-            children: [
-              const Icon(CupertinoIcons.airplane, color: Color(0xFF9496C3)),
-              SizedBox(width: 10),
-              Text("Departure", style: AppStyles.textStyle)
+              Icon(icon, color: Color(0xFF9496C3)),
+              const SizedBox(width: 10),
+              Text(txt, style: AppStyles.textStyle)
             ],
           ),
         ],

@@ -13,15 +13,15 @@ class AppTicketTabs extends StatelessWidget {
     print("${size.height.floor()}");
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(40)),
-      child: const Row(
+      child: Row(
         children: [
           AppTabs(
-            Tabtxt: "All Tickets",
+            Tabtxt: FirstTab,
             Tabborder: false,
             Tabcolor: false,
           ),
           AppTabs(
-            Tabtxt: "Hotels",
+            Tabtxt: SecondTab,
             Tabborder: true,
             Tabcolor: true,
           ),

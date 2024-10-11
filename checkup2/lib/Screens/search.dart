@@ -35,7 +35,10 @@ class _searchState extends State<search> {
           const SizedBox(
             height: 10,
           ),
-          const AppTicketTabs(),
+          const AppTicketTabs(
+            FirstTab: "All Tickets",
+            SecondTab: "Hotels",
+          ),
           const SizedBox(
             height: 25,
           ),

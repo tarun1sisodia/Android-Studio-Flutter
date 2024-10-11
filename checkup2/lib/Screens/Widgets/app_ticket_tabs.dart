@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AppTicketTabs extends StatelessWidget {
-  const AppTicketTabs({super.key});
+  final String FirstTab;
+  final String SecondTab;
+  const AppTicketTabs(
+      {super.key, required this.FirstTab, required this.SecondTab});
 
   @override
   Widget build(BuildContext context) {

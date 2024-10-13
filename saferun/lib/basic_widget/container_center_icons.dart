@@ -14,47 +14,47 @@ class Day1 extends StatelessWidget {
           backgroundColor: Colors.deepPurpleAccent,
           elevation: 0,
           leading: const Icon(Icons.menu),
+          actions: const [Icon(CupertinoIcons.reply_all)],
           title: const Text("Flutter by Google",
               style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20))),
       body: Column(
         children: [
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.purple,
-            child: const Center(
-                child: Text("I",
-                    style:
-                        TextStyle(fontWeight: FontWeight.w500, fontSize: 50))),
+          //Expanded Is used to fill the reminder space.
+          Expanded(
+            child: Container(
+              color: Colors.purple,
+              child: const Center(
+                  child:
+                      Text("I", style: TextStyle(fontWeight: FontWeight.w500))),
+            ),
           ),
-          Container(
-            height: 200,
-            width: 200,
-            color: Colors.lightBlue,
-            child: const Center(
-                child: Text("II",
-                    style:
-                        TextStyle(fontWeight: FontWeight.w500, fontSize: 50))),
+          //Basic Container
+          Expanded(
+            child: Container(
+              color: Colors.lightBlue,
+              child: const Center(
+                  child: Icon(CupertinoIcons.heart_circle_fill,
+                      color: Colors.pinkAccent)),
+            ),
           ),
           Row(
             children: [
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.deepPurpleAccent,
-                child: const Center(
-                    child: Text("III",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w500, fontSize: 50))),
+              Expanded(
+                child: Container(
+                  color: Colors.deepPurpleAccent,
+                  child: const Center(
+                      child: Text("III",
+                          style: TextStyle(fontWeight: FontWeight.w500))),
+                ),
               ),
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.amber,
-                child: const Center(
-                    child: Text("IV",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w500, fontSize: 50))),
+              Expanded(
+                child: Container(
+                  color: Colors.amber,
+                  child: const Center(
+                      child: Text("IV",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 50))),
+                ),
               ),
             ],
           )

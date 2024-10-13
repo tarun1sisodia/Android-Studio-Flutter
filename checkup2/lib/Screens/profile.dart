@@ -31,9 +31,10 @@ class _profileState extends State<profile> {
           ),
           const SizedBox(height: 10),
           const AppTicketTabs(
-            FirstTab: "Upcoming Tickets",
-            SecondTab: "Previous Tickets",
+            FirstTab: "Upcoming",
+            SecondTab: "Previous",
           ),
+          const LoginPg(),
         ],
       ),
     );

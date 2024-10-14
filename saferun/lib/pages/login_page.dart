@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:saferun/pages/home_page.dart';
+import 'package:saferun/pages/profile.dart';
+import 'package:saferun/pages/settings.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
-
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -20,6 +21,14 @@ class _LoginPageState extends State<LoginPage> {
     });
   }
 
+  final List pages = [
+    //Home Page
+    HomePage(),
+    //Profile page
+    Profile(),
+    //Settings page.
+    Settings()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,13 +43,19 @@ class _LoginPageState extends State<LoginPage> {
                   leading: Icon(CupertinoIcons.house),
                   title: Text("H O M E"),
                   onTap: () {
+                    Navigator.pop(context);
                     Navigator.pushNamed(context, '/homepage');
                   },
                 ),
-                /*ListTile(
-                    leading: Icon(CupertinoIcons.search_circle),
-                    title: Text("S E A R C H")),
                 ListTile(
+                  leading: Icon(CupertinoIcons.search_circle),
+                  title: Text("P R O F I L E"),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/profile');
+                  },
+                ),
+                /*ListTile(
                   leading: Icon(CupertinoIcons.graph_square),
                   title: Text("A N A L Y Z E R"),
                 ),
@@ -52,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                   leading: Icon(CupertinoIcons.settings_solid),
                   title: Text("S E T T I N G S"),
                   onTap: () {
+                    Navigator.pop(context);
                     Navigator.pushNamed(context, '/settings');
                   },
                 )
